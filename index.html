@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calcolatrice</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <div class="content">
+   <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+</div>
+<div class="content">
+  <div class="content">
+      <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+  </div>
+  <div class="content">
+      <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="*" value="X" onclick="n(this.id)" class="tasto">
+  </div>
+  <div class="content">
+       <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+       <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+       <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+       <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+   </div>
+   <div class="content">
+      <input type="submit" value="C" onclick="cancella()" class="tasto">
+      <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+      <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+      <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+    </div>
+    <div class="content">
+         <button value="=" onclick="operazione();" class="uguale tasto">=</button>
+     </div>
+ </div>
+
+ <script src="script.js"></script>
+  </body>
+</html>
